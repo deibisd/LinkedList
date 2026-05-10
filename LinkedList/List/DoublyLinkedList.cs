@@ -10,7 +10,7 @@ namespace List
         private Node<T>? tail;
 
         // =========================
-        // 🔵 INSERTAR EN ORDEN ASCENDENTE
+        // INSERTAR EN ORDEN ASCENDENTE
         // =========================
         public void Add(T data)
         {
@@ -32,7 +32,7 @@ namespace List
 
             Node<T>? current = head;
 
-            while (current.Next != null &&
+            while (current.Next != null 
                    current.Next.Data.CompareTo(data) < 0)
             {
                 current = current.Next;
@@ -50,7 +50,7 @@ namespace List
         }
 
         // =========================
-        // 📄 MOSTRAR NORMAL
+        //  MOSTRAR NORMAL
         // =========================
         public void ShowForward()
         {
@@ -66,7 +66,7 @@ namespace List
         }
 
         // =========================
-        // 📄 MOSTRAR INVERSO
+        // MOSTRAR INVERSO
         // =========================
         public void ShowBackward()
         {
@@ -82,7 +82,7 @@ namespace List
         }
 
         // =========================
-        // 🔽 ORDEN DESCENDENTE REAL
+        // ORDEN DESCENDENTE REAL
         // =========================
         public void SortDescending()
         {
@@ -111,7 +111,7 @@ namespace List
         }
 
         // =========================
-        // 🔍 EXISTE
+        // EXISTE
         // =========================
         public bool Exists(T value)
         {
@@ -129,7 +129,7 @@ namespace List
         }
 
         // =========================
-        // ❌ ELIMINAR UNA OCURRENCIA
+        // ELIMINAR UNA OCURRENCIA
         // =========================
         public void RemoveOne(T value)
         {
@@ -169,7 +169,7 @@ namespace List
         }
 
         // =========================
-        // ❌ ELIMINAR TODAS
+        // ELIMINAR TODAS
         // =========================
         public void RemoveAll(T value)
         {
@@ -178,7 +178,7 @@ namespace List
         }
 
         // =========================
-        // ⭐ MODA
+        // MODA
         // =========================
         public List<T> Mode()
         {
@@ -212,7 +212,7 @@ namespace List
         }
 
         // =========================
-        // 📊 GRÁFICA DE FRECUENCIAS
+        // GRÁFICA DE FRECUENCIAS
         // =========================
         public void Graficar()
         {
